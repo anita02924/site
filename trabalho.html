@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nita </title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #fdf7f2;
+      color: #4b4b4b;
+    }
+
+    header {
+      background-color: #6aa6ff;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    }
+
+    header h1 {
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffe08c;
+    }
+
+    section {
+      padding: 50px 10%;
+    }
+
+    .banner {
+      background: url('https://images.unsplash.com/photo-1521335629791-ce4aec67dd47?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-shadow: 2px 2px 5px #000;
+      font-size: 36px;
+      font-weight: bold;
+      border-bottom: 5px solid rgba(255,219,140,0.6);
+    }
+
+    .produtos {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 30px;
+      text-align: center;
+    }
+
+    .produto {
+      background: #ffffff;
+      border: 2px solid #ffe3b3;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(255,200,150,0.3);
+      padding: 20px;
+      width: 280px;
+      transition: 0.3s;
+    }
+
+    .produto:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 6px 14px rgba(255,180,120,0.5);
+    }
+
+    .produto img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .produto h3 {
+      margin-top: 15px;
+      font-size: 20px;
+      color: #5a5a5a;
+    }
+
+    .produto p {
+      margin: 10px 0;
+      color: #666;
+    }
+
+    .produto button {
+      background-color: #ff9bb3;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    .produto button:hover {
+      background-color: #ffe08c;
+      color: #333;
+    }
+
+    .sobre, .contato {
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.8;
+      background: #fffaf3;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(255,200,150,0.3);
+      border: 1px solid #ffe3b3;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ffcf9f;
+      background: #fff6e8;
+      border-radius: 5px;
+      font-size: 15px;
+    }
+
+    button.enviar {
+      background-color: #6aa6ff;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    button.enviar:hover {
+      background-color: #ff9bb3;
+      color: #fff;
+    }
+
+    footer {
+      background-color: #6aa6ff;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      border-top: 4px solid #ffe08c;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mirror Fashion</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="banner">Bem-vindo à Mirror Fashion</div>
+  </section>
+
+  <section id="produtos">
+    <h2 style="text-align:center; margin-bottom:30px;">Nossos Produtos</h2>
+    <div class="produtos">
+      <div class="produto">
+        <img src="https://m.media-amazon.com/images/I/41uUYcqfLxL._AC_SL1000_.jpg" alt="iPhone 16">
+        <h3>iPhone 16</h3>
+        <p>Desempenho alto e design moderno.</p>
+        <p><strong>R$ 4.999,90</strong></p>
+        <button>Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="produto">
+        <img src="https://images2.kabum.com.br/produtos/fotos/sync_mirakl/955832/xlarge/Xiaomi-Mi-17-Pro-Max-1TB-16gb-Ram-Black_1763036058.jpg" alt="Xiaomi 17 Pro Max">
+        <h3>Xiaomi 17 Pro Max</h3>
+        <p>Armazenamento generoso e desempenho excepcional.</p>
+        <p><strong>R$ 6.499,90</strong></p>
+        <button>Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="produto">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_739019-MLA95656293708_102025-F.webp" alt="iPhone 17 Pro Max">
+        <h3>iPhone 17 Pro Max</h3>
+        <p>Última geração com câmeras impressionantes.</p>
+        <p><strong>R$ 8.299,90</strong></p>
+        <button>Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="sobre">
+    <h2 style="text-align:center; margin-bottom:20px;">Sobre a Mirror Fashion</h2>
+    <p>A <strong>Mirror Fashion</strong> nasceu para oferecer estilo, elegância e autenticidade.</p>
+    <p>Missão: Moda moderna e acessível.</p>
+    <p>Visão: Ser referência no e-commerce de moda no Brasil.</p>
+  </section>
+
+  <section id="contato" class="contato">
+    <h2 style="text-align:center; margin-bottom:20px;">Fale Conosco</h2>
+
+    <form onsubmit="enviarMensagem(event)">
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea rows="5" placeholder="Sua mensagem" required></textarea>
+
+      <button type="submit" class="enviar">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mirror Fashion. Todos os direitos reservados</p>
+  </footer>
+
+  <script>
+    function enviarMensagem(event) {
+      event.preventDefault();
+      alert("Mensagem enviada com sucesso!");
+      document.querySelector("form").reset();
+    }
+  </script>
+
+</body>
+</html>
